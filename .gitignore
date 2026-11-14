@@ -1,0 +1,39 @@
+# ---------- Editors / IDEs ----------
+# JetBrains (WebStorm / IntelliJ): personal project settings, local paths, editor state
+.idea/
+*.iml
+# VS Code, Vim, etc.
+.vscode/
+*.swp
+*.swo
+*~
+
+# ---------- Operating system clutter ----------
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# ---------- Private / source files not used by the site ----------
+# Original full-size photo (8 MB, may contain EXIF metadata such as GPS location).
+# The site uses the cropped, metadata-free assets/img/suraja_profile.jpg instead.
+assets/img/suraja_s.JPG
+# Keep any other raw originals out of the public repo too
+*.raw
+*.psd
+*.ai
+originals/
+
+# ---------- Secrets & environment ----------
+.env
+.env.*
+*.pem
+*.key
+
+# ---------- Tooling (if ever added) ----------
+node_modules/
+dist/
+.cache/
+*.log
+npm-debug.log*

@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suraja Sandaruwan</title>
+    <meta name="description" content="Portfolio of Suraja Sandaruwan, Full Stack Developer.">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#0c0e1a">
+    <link rel="stylesheet" href="css/style.css?v=8">
+</head>
+<body>
+
+<header id="top">
+    <div class="wrap">
+        <nav>
+            <a href="#home" class="brand">
+                <div class="logo">SS</div>
+                <div><b>Suraja Sandaruwan</b><small>Senior Software Engineer</small></div>
+            </a>
+            <button class="burger" id="burger" aria-label="Open menu"><i data-icon="menu"></i></button>
+            <div class="links" id="links">
+                <a href="#home">Home</a><a href="#about">About</a><a href="#experience">Experience</a>
+                <a href="#education">Education</a><a href="#research">Research</a><a href="#tech">Tech</a>
+                <a href="#projects">Projects</a><a href="#contact">Contact</a>
+                <a class="pill" href="resume.html" target="_blank" rel="noopener">Resume <i data-icon="arrow-up-right"></i></a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- HERO -->
+    <section id="home">
+        <div class="wrap hero">
+            <div>
+                <span class="badge"><i class="dot"></i> Open for opportunities</span>
+                <h1>Hi, I’m <span class="grad">Suraja Sandaruwan</span></h1>
+                <p class="sub">Senior Software Engineer · Colombo, Sri Lanka</p>
+                <p class="quote">
+                    <b>"Any fool can write code that a computer can understand. Good programmers write code that humans
+                        can understand,"</b>
+                    as Martin Fowler put it. That is the standard I hold my work to: clean, well-tested software that
+                    teams can build on with confidence.
+                </p>
+                <div class="cta">
+                    <a class="btn primary" href="#contact"><i data-icon="mail"></i> Let’s connect</a>
+                    <a class="btn" href="#projects">View projects</a>
+                </div>
+                <div class="stats">
+                    <div class="stat"><b>5+</b><span>Projects</span></div>
+                    <div class="stat"><b>20+</b><span>Years</span></div>
+                    <div class="stat"><b>20+</b><span>Certificates</span></div>
+                </div>
+                <div class="social">
+                    <a href="https://github.com/KPSSandaruwan" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            data-icon="github"></i></a>
+                    <a href="https://www.linkedin.com/in/suraja-sandaruwan-58b022196/" target="_blank" rel="noopener"
+                       aria-label="LinkedIn"><i data-icon="linkedin"></i></a>
+                </div>
+            </div>
+            <!-- architecture card: capital-markets trading platform (exchange / brokerage systems, MENA) -->
+            <div class="arch" aria-label="Capital markets trading platform architecture I build for exchanges and brokers in the MENA region: investor and broker trading apps, order management system, pre-trade risk engine, market data and symbol master, exchange FIX gateway, post-trade clearing and settlement, and regulatory and symbol reporting">
+                <div class="arch-head">
+                    <span class="mono">trading.platform</span>
+                    <span class="arch-status"><i class="dot"></i>MENA markets open</span>
+                </div>
+                <svg class="arch-map" viewBox="0 0 460 312" role="img" aria-hidden="true">
+                    <!-- wires -->
+                    <path id="w1" class="wire" d="M230 52 V86"/>
+                    <path id="w2" class="wire" d="M230 130 V164"/>
+                    <path id="w3" class="wire" d="M310 186 H342"/>
+                    <path id="w4" class="wire" d="M150 186 H118"/>
+                    <path id="w5" class="wire" d="M230 208 V230 H79 V254"/>
+                    <path id="w6" class="wire" d="M230 208 V254"/>
+                    <path id="w7" class="wire" d="M230 208 V230 H381 V254"/>
+
+                    <!-- nodes -->
+                    <g class="node"><rect x="140" y="14" width="180" height="38" rx="10"/><text x="230" y="38">Investors &amp; Brokers</text></g>
+                    <g class="node"><rect x="150" y="86" width="160" height="44" rx="10"/><text x="230" y="105">Trading Apps</text><text class="sub" x="230" y="121">Web · Mobile · RTL</text></g>
+                    <g class="node core"><rect x="150" y="164" width="160" height="44" rx="10"/><text x="230" y="183">OMS</text><text class="sub" x="230" y="199">Order Management</text></g>
+                    <g class="node ai"><rect x="342" y="164" width="104" height="44" rx="10"/><text x="394" y="183">Market Data</text><text class="sub" x="394" y="199">Symbols · Quotes</text></g>
+                    <g class="node"><rect x="14" y="164" width="104" height="44" rx="10"/><text x="66" y="183">Risk Engine</text><text class="sub" x="66" y="199">Pre-trade</text></g>
+                    <g class="node domain"><rect x="14" y="254" width="130" height="44" rx="10"/><text x="79" y="273">Exchange</text><text class="sub" x="79" y="289">FIX Gateway</text></g>
+                    <g class="node domain"><rect x="165" y="254" width="130" height="44" rx="10"/><text x="230" y="273">Post-Trade</text><text class="sub" x="230" y="289">Clearing · Settle</text></g>
+                    <g class="node domain"><rect x="316" y="254" width="130" height="44" rx="10"/><text x="381" y="273">Reporting</text><text class="sub" x="381" y="289">Symbols · Regulator</text></g>
+
+                    <!-- data packets flowing along the wires -->
+                    <circle class="packet" r="3.5"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0s"><mpath href="#w1"/></animateMotion></circle>
+                    <circle class="packet" r="3.5"><animateMotion dur="1.6s" repeatCount="indefinite" begin="0.6s"><mpath href="#w2"/></animateMotion></circle>
+                    <circle class="packet ai" r="3.5"><animateMotion dur="1.2s" repeatCount="indefinite" begin="0.3s" keyPoints="0;1;0" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#w3"/></animateMotion></circle>
+                    <circle class="packet" r="3.5"><animateMotion dur="1.2s" repeatCount="indefinite" begin="0.9s" keyPoints="0;1;0" keyTimes="0;0.5;1" calcMode="linear"><mpath href="#w4"/></animateMotion></circle>
+                    <circle class="packet" r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.1s"><mpath href="#w5"/></animateMotion></circle>
+                    <circle class="packet" r="3.5"><animateMotion dur="1.4s" repeatCount="indefinite" begin="1.4s"><mpath href="#w6"/></animateMotion></circle>
+                    <circle class="packet" r="3.5"><animateMotion dur="2.2s" repeatCount="indefinite" begin="1.7s"><mpath href="#w7"/></animateMotion></circle>
+                </svg>
+                <div class="sdlc mono" aria-label="Order lifecycle">
+                    <span>New</span><span>Validate</span><span>Route</span><span>Fill</span><span>Report</span>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-ind mono">Scroll</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="user"></i>About me</span>
+            <h2 class="reveal">Professional Summary</h2>
+            <div class="about">
+                <div class="card profile reveal">
+                    <div class="profile-photo">
+                        <img src="assets/img/suraja_profile.jpg" alt="Suraja Sandaruwan" width="800" height="1000"
+                             loading="lazy">
+                    </div>
+                    <div class="profile-body">
+                        <h3 class="profile-name">Suraja Sandaruwan</h3>
+                        <p class="profile-role">Senior Software Engineer</p>
+                        <ul class="profile-info">
+                            <li><i data-icon="building-2"></i><span>XPay Collection Co.</span></li>
+                            <li><i data-icon="map-pin"></i><span>Colombo, Sri Lanka</span></li>
+                            <li><i data-icon="briefcase"></i><span>Full-time · Hybrid</span></li>
+                        </ul>
+                        <!--                        <span class="avail">AVAILABLE</span>-->
+                    </div>
+                </div>
+                <div class="card reveal">
+                    <p>I am an experienced Senior Software Engineer with 4 years of expertise in Customer-Centric
+                        Digital Transformation, Healthcare, Lead Management, ERP systems and FINTECH applications. I am
+                        proficient across the complete software development life cycle, with strong skills in software
+                        design, architecture and testing.</p>
+                    <p>I have contributed to large-scale projects, working across the stack from modern Angular and
+                        React frontends to Spring Boot and Node backends. I bring comprehensive AI knowledge to the
+                        products I build, and I focus on clean architecture, maintainable code and reliable experiences
+                        for the people who use them.</p>
+                    <div class="facts">
+                        <div><small>CURRENT ROLE</small><span>Senior Software Engineer</span></div>
+                        <div><small>COMPANY</small><span>XPay Colleation Co.</span></div>
+                        <div><small>LOCATION</small><span>Colombo, Sri Lanka</span></div>
+                        <div><small>FOCUS</small><span>FINTECH</span></div>
+                    </div>
+                    <small class="label">CORE COMPETENCIES</small>
+                    <ul class="comp">
+                        <li>Software design, architecture &amp; testing across the full SDLC</li>
+                        <li>FINTECH, Healthcare, Lead Management &amp; ERP domain systems</li>
+                        <li>Angular &amp; React frontends with TypeScript</li>
+                        <li>Spring Boot REST APIs, RBAC &amp; workflow systems</li>
+                        <li>AI-driven features · CI/CD · cross-functional teams</li>
+                    </ul>
+                    <div class="nums">
+                        <div><b>5+</b><small>YEARS EXPERIENCE</small></div>
+                        <div><b>20+</b><small>PROJECTS DELIVERED</small></div>
+                        <div><b>20+</b><small>CERTIFICATIONS</small></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="marquee">
+        <div class="track" id="track"></div>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="briefcase"></i>Experience</span>
+            <h2 class="reveal">Work Experience</h2>
+            <p class="lead reveal">Four years of shipping production software across FINTECH, healthcare, ERP and lead
+                management, designing systems end to end and seeing them through from first sketch to release.</p>
+            <div class="timeline">
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><span class="tag">Full Time</span><span class="date"><i
+                                data-icon="calendar"></i>Apr 2025 – Present</span></div>
+                        <h3>Senior Software Engineer</h3>
+                        <div class="meta"><span><i data-icon="building-2"></i>XPay Collection Co.</span><span><i
+                                data-icon="map-pin"></i>Kuwait</span></div>
+                        <p>Leading the design and development of scalable fintech and digital payment solutions built
+                            for high availability and secure transaction processing.</p>
+                        <ul>
+                            <li>Architected Spring Boot services and RESTful APIs for payment processing, reconciliation
+                                and reporting.</li>
+                            <li>Integrated payment gateways, banking APIs and SMS/notification services to streamline
+                                digital collections.</li>
+                            <li>Tuned PostgreSQL/MySQL indexing, queries and schemas to speed up transaction processing.</li>
+                            <li>Reduced production incidents with structured logging, centralized monitoring and automated
+                                error handling on GCP.</li>
+                            <li>Lead code reviews and mentor junior developers, enforcing clean architecture and best
+                                practices.</li>
+                        </ul>
+                        <div class="chips">
+                            <span>Java</span><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>GCP</span><span>Payment Gateways</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><span class="tag">Full Time</span><span class="date"><i
+                                data-icon="calendar"></i>Nov 2023 – Apr 2025</span></div>
+                        <h3>Software Engineer</h3>
+                        <div class="meta"><span><i data-icon="building-2"></i>The GP Service</span><span><i
+                                data-icon="map-pin"></i>United Kingdom</span></div>
+                        <p>Designed and developed a comprehensive healthcare application that streamlines medical
+                            workflows and improves patient engagement, working alongside QA, marketing and sales teams.</p>
+                        <ul>
+                            <li>Built features across Angular, React and Vue.js frontends backed by Java Spring Boot services.</li>
+                            <li>Strengthened PostgreSQL data integrity, security and query performance.</li>
+                            <li>Monitored, diagnosed and optimised performance with AWS CloudWatch and Datadog.</li>
+                            <li>Worked directly with clients on requirements and delivery planning.</li>
+                        </ul>
+                        <div class="chips">
+                            <span>Java</span><span>Spring Boot</span><span>Angular</span><span>React</span><span>Vue.js</span><span>PostgreSQL</span><span>AWS</span><span>Datadog</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><span class="tag">Full Time</span><span class="date"><i
+                                data-icon="calendar"></i>Feb 2022 – Oct 2023</span></div>
+                        <h3>Software Engineer</h3>
+                        <div class="meta"><span><i data-icon="building-2"></i>Emojot (PVT) LTD.</span><span><i
+                                data-icon="map-pin"></i>Colombo</span></div>
+                        <p>Delivered products and solutions for a global clientele, working with developers, architects,
+                            QA specialists and business analysts.</p>
+                        <ul>
+                            <li>Specialised in the Workflow Management component, designing and implementing core workflow
+                                processes.</li>
+                            <li>Built features with Angular, AngularJS and Node.js on AWS infrastructure.</li>
+                            <li>Led platform stability work, shipping new features, bug fixes and optimisations.</li>
+                            <li>Worked in Agile/Scrum with CI/CD, and took part in design and code reviews.</li>
+                        </ul>
+                        <div class="chips">
+                            <span>Angular</span><span>AngularJS</span><span>Node.js</span><span>AWS</span><span>CI/CD</span><span>Agile/Scrum</span><span>Workflow Engines</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><span class="tag">Full Time</span><span class="date"><i
+                                data-icon="calendar"></i>Jun 2021 – Jan 2022</span></div>
+                        <h3>Associate Software Engineer</h3>
+                        <div class="meta"><span><i data-icon="building-2"></i>Efito Solutions (PVT) LTD.</span><span><i
+                                data-icon="map-pin"></i>Colombo</span></div>
+                        <p>Worked across the full stack in a three-person team, building high-performance applications
+                            from API to UI.</p>
+                        <ul>
+                            <li>Developed and optimised RESTful APIs with Node.js.</li>
+                            <li>Delivered seamless frontend experiences with React and Angular.</li>
+                        </ul>
+                        <div class="chips">
+                            <span>Node.js</span><span>React</span><span>Angular</span><span>REST APIs</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 class="sub-h reveal">Company Projects</h3>
+            <p class="sub-lead reveal">Products I have designed, built and shipped across my roles.</p>
+            <div class="timeline timeline-sm">
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <h4>XPay Digital Payments &amp; Collections Platform</h4>
+                        <small>XPay Collection Co.</small>
+                        <ul>
+                            <li>Architected Spring Boot APIs for payment processing, reconciliation and reporting, built for
+                                high availability and secure transactions.</li>
+                            <li>Integrated payment gateways, banking APIs and SMS/notification services into the digital
+                                collection workflow.</li>
+                            <li>Built merchant and internal operations portals with Angular and React.</li>
+                        </ul>
+                        <div class="chips accent"><span>Java</span><span>Spring Boot</span><span>Angular</span><span>React</span><span>PostgreSQL</span><span>GCP</span></div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <div class="proj-tags"><span class="tag">NBQSA 2023 · Overall Gold</span><span class="tag">APICTA 2023 Nominee</span></div>
+                        <h4>Online Reputation Management (ORM)</h4>
+                        <small>Emojot (PVT) LTD.</small>
+                        <p>An AI-powered tool that monitors online reviews, alerts on negative feedback, automates review
+                            request campaigns and suggests intelligent responses.</p>
+                        <ul>
+                            <li>Developed the competitor analysis module.</li>
+                            <li>Won Gold in Marketing Solutions &amp; Business Services and the Overall Gold at NBQSA 2023.</li>
+                        </ul>
+                        <div class="chips accent"><span>Angular</span><span>Node.js</span><span>AWS</span><span>AI</span></div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <div class="proj-tags"><span class="tag">NBQSA 2023 · Silver</span><span class="tag">APICTA 2023 Nominee</span></div>
+                        <h4>Social Listening &amp; Tracking (SLT)</h4>
+                        <small>Emojot (PVT) LTD.</small>
+                        <p>A generative-AI tool that tracks conversations across social media and the web, surfacing
+                            actionable insights on high-engagement posts.</p>
+                        <ul>
+                            <li>Developed the competitor analysis module.</li>
+                        </ul>
+                        <div class="chips accent"><span>Angular</span><span>Node.js</span><span>AWS</span><span>Generative AI</span></div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <h4>Visitor Management System (VMS)</h4>
+                        <small>Emojot (PVT) LTD.</small>
+                        <p>A smart visitor platform that streamlines tracking, strengthens security, integrates with internal
+                            systems and delivers real-time analytics.</p>
+                        <ul>
+                            <li>Designed and developed the visitor authentication app.</li>
+                        </ul>
+                        <div class="chips accent"><span>Angular</span><span>Node.js</span><span>AWS</span></div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <h4>Wream App · Admin &amp; Business Portal</h4>
+                        <small>Efito Solutions (PVT) LTD.</small>
+                        <ul>
+                            <li>Designed and built the portal frontend, integrating APIs for product management, marketing
+                                optimisation and customer engagement.</li>
+                        </ul>
+                        <div class="chips accent"><span>React</span><span>Angular</span><span>REST APIs</span></div>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card proj-card">
+                        <h4>Tour App</h4>
+                        <small>Efito Solutions (PVT) LTD.</small>
+                        <ul>
+                            <li>Built the frontend for exploring locations, hotels and facilities, with seamless API integration.</li>
+                        </ul>
+                        <div class="chips accent"><span>React</span><span>Angular</span><span>REST APIs</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="graduation-cap"></i>Education</span>
+            <h2 class="reveal">Education</h2>
+            <p class="lead reveal">The academic grounding behind my engineering, in computer science and software design,
+                and a habit of learning I keep building on.</p>
+            <div class="timeline">
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><h3 class="edu-title">BSc (Hons) Software Engineering</h3><span class="date"><i
+                                data-icon="calendar"></i>2021 - 2023</span></div>
+                        <div class="meta edu-meta"><span><i
+                                data-icon="graduation-cap"></i>London Metropolitan University</span><span><i data-icon="map-pin"></i>London, United Kingdom</span>
+                        </div>
+                        <p>Built a strong foundation in architecting, designing and developing software systems, from
+                            core computer science principles to real-world engineering practice.</p>
+                    </div>
+                </div>
+                <div class="tl reveal">
+                    <div class="card">
+                        <div class="row"><h3 class="edu-title">National Diploma in Technology</h3><span
+                                class="date"><i data-icon="calendar"></i>2018 - 2021</span></div>
+                        <div class="meta edu-meta"><span><i data-icon="graduation-cap"></i>University of Moratuwa</span><span><i
+                                data-icon="map-pin"></i>Moratuwa, Sri Lanka</span></div>
+                        <p>Where my engineering journey began: a practical, technology-focused programme that built my
+                            grounding in programming, problem solving and turning ideas into working systems.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="flask-conical"></i>Research</span>
+            <h2 class="reveal">Research Project</h2>
+            <p class="lead reveal">Academic research exploring intelligent resilience patterns for cloud-native microservices using deep reinforcement learning.</p>
+            <div class="card reveal">
+                <span class="tag">Final Year Project</span>
+                <h3 class="research-title">Feedback Analysis System</h3>
+                <p class="research-topic">Sentiment Analysis · Deep Learning with Machine Learning Algorithms</p>
+                <p class="research-abstract">Shoppers rarely have time to read every review before buying. This system
+                    analyses product reviews on online shopping sites and turns them into clear insights, so users can
+                    make confident purchase decisions in seconds.</p>
+                <ul class="tl bullets research-points">
+                    <li>Applied neural-network NLP to classify review sentiment, with Kafka for real-time stream processing.</li>
+                    <li>Built a three-tier architecture on Node.js REST APIs, Cassandra and MongoDB, deployed on Heroku.</li>
+                    <li>Visualised the results through Tableau, Power BI and Google Data Studio dashboards.</li>
+                    <li>Delivered with Agile, using GitHub for version control and Freshdesk for ticketing.</li>
+                </ul>
+                <div class="chips">
+                    <span>Neural Networks</span><span>NLP</span><span>Kafka</span><span>Node.js</span><span>REST APIs</span><span>MongoDB</span><span>Heroku</span><span>Tableau</span><span>Power BI</span> <span>JAVA</span> <span>Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECH -->
+    <section id="tech">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="wrench"></i>Tools &amp; Technologies</span>
+            <h2 class="reveal">Tech Stack</h2>
+            <p class="lead reveal">The tools I rely on to design, build and run production systems, from the interface
+                to the cloud.</p>
+            <div class="tabs" id="tabs"></div>
+            <div id="techwrap"></div>
+        </div>
+    </section>
+
+<!--    &lt;!&ndash; PROJECTS &ndash;&gt;-->
+<!--    <section id="projects">-->
+<!--        <div class="wrap">-->
+<!--            <span class="eyebrow reveal"><i data-icon="layers"></i>Selected work</span>-->
+<!--            <h2 class="reveal">Projects</h2>-->
+<!--            <p class="lead reveal">A few things I’ve built. Click a card to view details.</p>-->
+<!--            <div class="projects" id="projgrid"></div>-->
+<!--        </div>-->
+<!--    </section>-->
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="wrap">
+            <span class="eyebrow reveal"><i data-icon="send"></i>Contact</span>
+            <h2 class="reveal">Let’s build something that scales 🚀</h2>
+            <p class="lead reveal">Have a platform to design, a system to modernise or a role to fill? I’d love to hear
+                about it.</p>
+            <div class="contact">
+                <div class="reveal">
+                    <h3 class="contact-title">Get in touch</h3>
+                    <div class="info">
+                        <a href="mailto:kpsurajasandaruwan@gmail.com">
+                            <i data-icon="mail" class="info-icon"></i>
+                            <span><small>EMAIL</small>kpsurajasandaruwan@gmail.com</span>
+                            <i data-icon="arrow-up-right" class="info-arrow"></i>
+                        </a>
+                        <a href="https://wa.me/94774412849?text=Hi%20Suraja%2C%20I%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect."
+                           target="_blank" rel="noopener">
+                            <i data-icon="message-square" class="info-icon"></i>
+                            <span><small>WHATSAPP</small>Chat with me</span>
+                            <i data-icon="arrow-up-right" class="info-arrow"></i>
+                        </a>
+                    </div>
+                    <p class="note note-top">Based in Colombo, working with teams across the MENA region, the UK and beyond.</p>
+                </div>
+                <div class="card reveal help-card">
+                    <h3 class="form-title">How I can help</h3>
+                    <p class="note note-bottom">Open to senior roles and selected freelance work</p>
+                    <ul class="help-list">
+                        <li>
+                            <i data-icon="layers"></i>
+                            <div><b>System architecture</b><span>Designing scalable, secure platforms for fintech and capital markets.</span></div>
+                        </li>
+                        <li>
+                            <i data-icon="wrench"></i>
+                            <div><b>Modernisation &amp; performance</b><span>Upgrading legacy systems, APIs and databases for speed and reliability.</span></div>
+                        </li>
+                        <li>
+                            <i data-icon="briefcase"></i>
+                            <div><b>Senior engineering</b><span>Leading full-stack delivery with Java, Spring Boot, Angular and React.</span></div>
+                        </li>
+                    </ul>
+                    <div class="avail-row">
+                        <span><i data-icon="map-pin"></i>Colombo, Sri Lanka</span>
+                        <span><i data-icon="calendar"></i><b id="localTime" class="mono">--:--</b>&nbsp;local time (GMT+5:30)</span>
+                        <span><i class="dot"></i>Replies within 24h</span>
+                    </div>
+                    <div class="cta">
+                        <a class="btn primary" href="mailto:kpsurajasandaruwan@gmail.com?subject=Hello%20Suraja"><i data-icon="mail"></i> Email me</a>
+                        <a class="btn" href="https://www.linkedin.com/in/suraja-sandaruwan-58b022196/" target="_blank" rel="noopener"><i data-icon="linkedin"></i> LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap foot">
+        <span>© <span id="yr"></span> Suraja Sandaruwan</span>
+    </div>
+</footer>
+
+<!-- floating back-to-top button: appears after scrolling down -->
+<button class="to-top-fab" id="toTopFab" data-to-top aria-label="Back to top"><i data-icon="arrow-up"></i></button>
+
+<div class="modal" id="modal">
+    <div class="card">
+        <button class="x" id="mx" aria-label="Close project details"><i data-icon="x"></i></button>
+        <small id="mcat" class="modal-cat"></small>
+        <h3 id="mt"></h3>
+        <p id="md"></p>
+        <div class="chips" id="mc"></div>
+        <a class="btn primary" href="#" id="ml" target="_blank" rel="noopener"><i data-icon="github"></i> View on GitHub
+            <i data-icon="external-link"></i></a>
+    </div>
+</div>
+
+<script src="js/icons.js"></script>
+<script src="js/tech-icons.js?v=3"></script>
+<script src="js/main.js?v=9"></script>
+</body>
+</html>

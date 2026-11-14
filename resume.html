@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume · Suraja Sandaruwan</title>
+    <meta name="description" content="Resume of Suraja Sandaruwan, Senior Software Engineer.">
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/favicon/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/favicon/apple-touch-icon.png">
+    <meta name="theme-color" content="#0c0e1a">
+    <style>
+        :root{--bg:#0c0e1a;--panel:#131628;--line:rgba(242,242,237,.09);--text:#F2F2ED;--muted:#a3a7c2;
+              --btn:linear-gradient(90deg,#7CD5C7,#118AB2);--ink:#0c0e1a}
+        *{box-sizing:border-box;margin:0;padding:0}
+        html,body{height:100%}
+        body{display:flex;flex-direction:column;background:var(--bg);color:var(--text);
+             font-family:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+        .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;
+             padding:12px 20px;padding-top:calc(12px + env(safe-area-inset-top, 0px));
+             border-bottom:1px solid var(--line);background:var(--panel)}
+        .who{display:flex;align-items:center;gap:12px;color:inherit;text-decoration:none}
+        .who img{width:34px;height:34px}
+        .who b{display:block;font-size:15px}
+        .who small{color:var(--muted);font-size:12px}
+        .actions{display:flex;gap:8px;flex-wrap:wrap}
+        .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:9px 18px;font-size:14px;
+             font-weight:600;text-decoration:none;color:var(--text);border:1px solid var(--line);transition:.2s}
+        .btn:hover{border-color:rgba(242,242,237,.3)}
+        .btn.primary{background:var(--btn);color:var(--ink);border:0}
+        .btn svg{width:16px;height:16px}
+        .viewer{flex:1;width:100%;border:0;background:#525659}
+        .fallback{flex:1;padding:60px 20px;text-align:center;color:var(--muted)}
+        [hidden]{display:none!important}
+    </style>
+</head>
+<body>
+    <div class="bar">
+        <a class="who" href="index.html">
+            <img src="assets/favicon/favicon.svg" alt="">
+            <div><b>Suraja Sandaruwan</b><small>Resume</small></div>
+        </a>
+        <div class="actions">
+            <a class="btn" href="index.html">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+                Portfolio
+            </a>
+            <a class="btn primary" href="assets/resume/Suraja_Sandaruwan_Resume.pdf" download="Suraja_Sandaruwan_Resume.pdf">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="m7 10 5 5 5-5"/><path d="M12 15V3"/></svg>
+                Download PDF
+            </a>
+        </div>
+    </div>
+    <iframe class="viewer" id="viewer" src="assets/resume/Suraja_Sandaruwan_Resume.pdf#view=FitH" title="Suraja Sandaruwan resume (PDF)">
+    </iframe>
+    <div class="fallback" id="fallback" hidden>
+        <p>Your browser can’t display the PDF here.</p>
+        <p style="margin-top:16px"><a class="btn primary" href="assets/resume/Suraja_Sandaruwan_Resume.pdf">Open the resume</a></p>
+    </div>
+    <script>
+        // phones (e.g. Android Chrome) can't show PDFs inside a page: offer a direct link instead
+        if (navigator.pdfViewerEnabled === false) {
+            document.getElementById("viewer").remove();
+            document.getElementById("fallback").hidden = false;
+        }
+    </script>
+</body>
+</html>
